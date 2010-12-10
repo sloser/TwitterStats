@@ -1,0 +1,2439 @@
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:00:08) [GET]
+
+NameError (uninitialized constant TwitterController::Twitterland):
+  app/controllers/twitter_controller.rb:4:in `index'
+
+Rendered rescues/_trace (89.2ms)
+Rendered rescues/_request_and_response (2.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-11 17:00:36) [GET]
+
+NameError (uninitialized constant TwitterController::Twitterland):
+  app/controllers/twitter_controller.rb:3
+
+Rendered rescues/_trace (86.4ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-11 17:00:38) [GET]
+
+NameError (uninitialized constant TwitterController::Twitterland):
+  app/controllers/twitter_controller.rb:3
+
+Rendered rescues/_trace (261.9ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-11 17:02:49) [GET]
+
+NameError (uninitialized constant TwitterController::Twitterland):
+  app/controllers/twitter_controller.rb:3
+
+Rendered rescues/_trace (85.5ms)
+Rendered rescues/_request_and_response (2.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-11 17:02:59) [GET]
+
+TypeError (wrong argument type String (expected Module)):
+  app/controllers/twitter_controller.rb:3:in `include'
+  app/controllers/twitter_controller.rb:3
+
+Rendered rescues/_trace (208.5ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-11 17:03:10) [GET]
+
+MissingSourceFile (no such file to load -- Twitterland):
+  app/controllers/twitter_controller.rb:3
+
+Rendered rescues/_trace (353.5ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:03:17) [GET]
+
+NoMethodError (undefined method `stringify_keys' for "Twitter user not found":String):
+  httparty (0.4.3) lib/httparty/response.rb:15:in `send'
+  httparty (0.4.3) lib/httparty/response.rb:15:in `method_missing'
+  mash (0.0.3) lib/mash.rb:131:in `deep_update'
+  mash (0.0.3) lib/mash.rb:50:in `initialize'
+  twitterland (0.0.3) lib/twitterland/follow_cost.rb:8:in `new'
+  twitterland (0.0.3) lib/twitterland/follow_cost.rb:8:in `show'
+  app/controllers/twitter_controller.rb:6:in `index'
+
+Rendered rescues/_trace (92.4ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:03:29) [GET]
+Rendering twitter/index
+Completed in 1255ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:03:48) [GET]
+Rendering twitter/index
+Completed in 380ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:04:10) [GET]
+Rendering twitter/index
+Completed in 451ms (View: 159, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:05:31) [GET]
+Rendering twitter/index
+ERROR: compiling _run_erb_app47views47twitter47index46html46erb RAISED compile error
+/var/rails/twitterland/app/views/twitter/index.html.erb:2: syntax error, unexpected ';', expecting ')'
+...(( debug(@follow_cost ).to_s); @output_buffer.concat "</p>\n...
+                              ^
+Function body:           def _run_erb_app47views47twitter47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Twitter</h1>\n<p>"
+; @output_buffer.concat(( debug(@follow_cost ).to_s); @output_buffer.concat "</p>\n<p>account created at: "
+; @output_buffer.concat(( @follow_cost.twitter_created_at ).to_s); @output_buffer.concat "</p>\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /var/rails/twitterland/app/views/twitter/index.html.erb:7:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/chunked.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:61:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/var/rails/twitterland/app/views/twitter/index.html.erb:2: syntax error, unexpected ';', expecting ')'
+...(( debug(@follow_cost ).to_s); @output_buffer.concat "</p>\n...
+                              ^) on line #2 of app/views/twitter/index.html.erb:
+1: <h1>Twitter</h1>
+2: <p><%= debug(@follow_cost %></p>
+3: <p>account created at: <%= @follow_cost.twitter_created_at %></p>
+
+    app/views/twitter/index.html.erb:7:in `compile!'
+
+Rendered rescues/_trace (100.3ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:05:39) [GET]
+Rendering twitter/index
+Completed in 316ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:06:16) [GET]
+Rendering twitter/index
+Completed in 349ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:06:37) [GET]
+Rendering twitter/index
+Completed in 305ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:09:32) [GET]
+Rendering twitter/index
+Completed in 306ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:09:38) [GET]
+Rendering twitter/index
+Completed in 463ms (View: 151, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:13:33) [GET]
+Rendering twitter/index
+Completed in 1331ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:13:43) [GET]
+Rendering twitter/index
+Completed in 1966ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:16:09) [GET]
+Rendering twitter/index
+Completed in 1971ms (View: 25, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:16:53) [GET]
+Rendering twitter/index
+Completed in 2456ms (View: 19, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:17:20) [GET]
+Rendering twitter/index
+Completed in 2153ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:17:37) [GET]
+Rendering twitter/index
+Completed in 1189ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:17:56) [GET]
+
+Crack::ParseError (Invalid JSON string):
+  crack (0.1.2) lib/crack/json.rb:14:in `parse'
+  httparty (0.4.3) lib/httparty/request.rb:112:in `parse_response'
+  httparty (0.4.3) lib/httparty/request.rb:101:in `handle_response'
+  httparty (0.4.3) lib/httparty/request.rb:40:in `perform'
+  httparty (0.4.3) lib/httparty.rb:156:in `perform_request'
+  httparty (0.4.3) lib/httparty.rb:122:in `get'
+  twitterland (0.0.3) lib/twitterland/follow_cost.rb:8:in `show'
+  app/controllers/twitter_controller.rb:8:in `index'
+
+Rendered rescues/_trace (259.8ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:18:13) [GET]
+Rendering twitter/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.profile_image_url) on line #5 of app/views/twitter/index.html.erb:
+2: 
+3: <%= debug(@influence) %>
+4: 
+5: <%= image_tag @follow_cost.profile_image_url %> <%= @follow_cost.username %>
+6: <p>account created at: <%= @follow_cost.twitter_created_at %></p>
+7: <p>milliscobles_all_time: <%= @follow_cost.milliscobles_all_time %></p>
+8: <p>average_tweets_per_day: <%= @follow_cost.average_tweets_per_day %></p>
+
+    app/views/twitter/index.html.erb:5
+
+Rendered rescues/_trace (97.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:18:37) [GET]
+Rendering twitter/index
+Completed in 24ms (View: 20, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:19:26) [GET]
+Rendering twitter/index
+Completed in 37ms (View: 33, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:19:39) [GET]
+Rendering twitter/index
+
+ActionView::TemplateError (undefined method `input_field' for #<ActionView::Base:0xb6880444>) on line #5 of app/views/twitter/index.html.erb:
+2: 
+3: <% form_tag '' do -%>
+4: 	
+5: 	<%= input_field 'username' %>
+6: 	
+7: <% end -%>
+8: 
+
+    app/views/twitter/index.html.erb:5
+    app/views/twitter/index.html.erb:3
+
+Rendered rescues/_trace (161.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:19:47) [GET]
+Rendering twitter/index
+
+ActionView::TemplateError (wrong number of arguments (1 for 2)) on line #5 of app/views/twitter/index.html.erb:
+2: 
+3: <% form_tag '' do -%>
+4: 	
+5: 	<%= text_field 'username' %>
+6: 	
+7: <% end -%>
+8: 
+
+    app/views/twitter/index.html.erb:5:in `text_field'
+    app/views/twitter/index.html.erb:5
+    app/views/twitter/index.html.erb:3
+
+Rendered rescues/_trace (107.3ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:19:52) [GET]
+Rendering twitter/index
+Completed in 27ms (View: 23, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:20:24) [GET]
+Rendering twitter/index
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:20:33) [GET]
+Rendering twitter/index
+Completed in 25ms (View: 21, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:20:36) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"028GAyqrmMOtanMDLv65QVYSAXacc+RiLjSaVcDQ+vw=", "username"=>"emusoft"}
+
+NameError (undefined local variable or method `username' for #<TwitterController:0xb6a3ac1c>):
+  app/controllers/twitter_controller.rb:9:in `index'
+
+Rendered rescues/_trace (86.3ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:20:49) [GET]
+Rendering twitter/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:20:52) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"028GAyqrmMOtanMDLv65QVYSAXacc+RiLjSaVcDQ+vw=", "username"=>"sloser"}
+Rendering twitter/index
+Completed in 1193ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:20:59) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"028GAyqrmMOtanMDLv65QVYSAXacc+RiLjSaVcDQ+vw=", "username"=>"emusoft"}
+Rendering twitter/index
+Completed in 1296ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:21:11) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"028GAyqrmMOtanMDLv65QVYSAXacc+RiLjSaVcDQ+vw=", "username"=>"emusoft"}
+Rendering twitter/index
+Completed in 701ms (View: 14, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:21:16) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"028GAyqrmMOtanMDLv65QVYSAXacc+RiLjSaVcDQ+vw=", "username"=>"emusoftt"}
+
+NoMethodError (undefined method `stringify_keys' for "Twitter user not found":String):
+  httparty (0.4.3) lib/httparty/response.rb:15:in `send'
+  httparty (0.4.3) lib/httparty/response.rb:15:in `method_missing'
+  mash (0.0.3) lib/mash.rb:131:in `deep_update'
+  mash (0.0.3) lib/mash.rb:50:in `initialize'
+  twitterland (0.0.3) lib/twitterland/follow_cost.rb:8:in `new'
+  twitterland (0.0.3) lib/twitterland/follow_cost.rb:8:in `show'
+  app/controllers/twitter_controller.rb:9:in `index'
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:22:57) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"028GAyqrmMOtanMDLv65QVYSAXacc+RiLjSaVcDQ+vw=", "username"=>"emusoftt"}
+
+NoMethodError (undefined method `stringify_keys' for "Twitter user not found":String):
+  httparty (0.4.3) lib/httparty/response.rb:15:in `send'
+  httparty (0.4.3) lib/httparty/response.rb:15:in `method_missing'
+  mash (0.0.3) lib/mash.rb:131:in `deep_update'
+  mash (0.0.3) lib/mash.rb:50:in `initialize'
+  twitterland (0.0.3) lib/twitterland/follow_cost.rb:8:in `new'
+  twitterland (0.0.3) lib/twitterland/follow_cost.rb:8:in `show'
+  app/controllers/twitter_controller.rb:10:in `index'
+
+Rendered rescues/_trace (92.7ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:24:17) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"028GAyqrmMOtanMDLv65QVYSAXacc+RiLjSaVcDQ+vw=", "username"=>"emusoftt"}
+Rendering twitter/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.profile_image_url) on line #12 of app/views/twitter/index.html.erb:
+9: 
+10: <% if @username -%>
+11: 	
+12: <%= image_tag @follow_cost.profile_image_url %> <%= @follow_cost.username %>
+13: <p>account created at: <%= @follow_cost.twitter_created_at %></p>
+14: <p>milliscobles_all_time: <%= @follow_cost.milliscobles_all_time %></p>
+15: <p>average_tweets_per_day: <%= @follow_cost.average_tweets_per_day %></p>
+
+    app/views/twitter/index.html.erb:12
+
+Rendered rescues/_trace (245.3ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:24:50) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"028GAyqrmMOtanMDLv65QVYSAXacc+RiLjSaVcDQ+vw=", "username"=>"emusoftt"}
+Rendering twitter/index
+Completed in 30366ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:25:29) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"028GAyqrmMOtanMDLv65QVYSAXacc+RiLjSaVcDQ+vw=", "username"=>"emusoftt"}
+Rendering twitter/index
+Completed in 44703ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:26:23) [GET]
+Rendering twitter/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:26:29) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"028GAyqrmMOtanMDLv65QVYSAXacc+RiLjSaVcDQ+vw=", "username"=>"sloser"}
+Rendering twitter/index
+Completed in 2426ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:26:35) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"028GAyqrmMOtanMDLv65QVYSAXacc+RiLjSaVcDQ+vw=", "username"=>"sloserr"}
+Rendering twitter/index
+Completed in 15304ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:27:02) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"028GAyqrmMOtanMDLv65QVYSAXacc+RiLjSaVcDQ+vw=", "username"=>"sloserr"}
+Rendering twitter/index
+Completed in 15314ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:27:49) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"028GAyqrmMOtanMDLv65QVYSAXacc+RiLjSaVcDQ+vw=", "username"=>"sloserr"}
+Rendering twitter/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.profile_image_url) on line #12 of app/views/twitter/index.html.erb:
+9: 
+10: <% if @username && !@error -%>
+11: 
+12: <%= image_tag @follow_cost.profile_image_url %> <%= @follow_cost.username %>
+13: <p>account created at: <%= @follow_cost.twitter_created_at %></p>
+14: <p>milliscobles_all_time: <%= @follow_cost.milliscobles_all_time %></p>
+15: <p>average_tweets_per_day: <%= @follow_cost.average_tweets_per_day %></p>
+
+    app/views/twitter/index.html.erb:12
+
+Rendered rescues/_trace (98.4ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:28:26) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"028GAyqrmMOtanMDLv65QVYSAXacc+RiLjSaVcDQ+vw=", "username"=>"sloserr"}
+Rendering twitter/index
+Completed in 43369ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:29:10) [GET]
+Rendering twitter/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:29:17) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"028GAyqrmMOtanMDLv65QVYSAXacc+RiLjSaVcDQ+vw=", "username"=>"sh00le"}
+Rendering twitter/index
+Completed in 2222ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:29:25) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"028GAyqrmMOtanMDLv65QVYSAXacc+RiLjSaVcDQ+vw=", "username"=>"sloser"}
+Rendering twitter/index
+Completed in 1100ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:29:44) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"028GAyqrmMOtanMDLv65QVYSAXacc+RiLjSaVcDQ+vw=", "username"=>"37signals"}
+Rendering twitter/index
+Completed in 1931ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:29:59) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"028GAyqrmMOtanMDLv65QVYSAXacc+RiLjSaVcDQ+vw=", "username"=>"emusoft"}
+Rendering twitter/index
+Completed in 676ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:30:13) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"028GAyqrmMOtanMDLv65QVYSAXacc+RiLjSaVcDQ+vw=", "username"=>"MarioFr"}
+Rendering twitter/index
+Completed in 2194ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:30:24) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"028GAyqrmMOtanMDLv65QVYSAXacc+RiLjSaVcDQ+vw=", "username"=>"markodugonjic"}
+Rendering twitter/index
+Completed in 2765ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:31:07) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"028GAyqrmMOtanMDLv65QVYSAXacc+RiLjSaVcDQ+vw=", "username"=>"radio_101"}
+Rendering twitter/index
+Completed in 1599ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:31:24) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"028GAyqrmMOtanMDLv65QVYSAXacc+RiLjSaVcDQ+vw=", "username"=>"prognoza_zg"}
+Rendering twitter/index
+Completed in 1999ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-11 17:32:00) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"028GAyqrmMOtanMDLv65QVYSAXacc+RiLjSaVcDQ+vw=", "username"=>"zytzagoo"}
+Rendering twitter/index
+Completed in 30317ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 12:53:36) [GET]
+Rendering twitter/index
+Completed in 91ms (View: 86, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 12:53:40) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser"}
+Rendering twitter/index
+Completed in 13724ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 12:58:52) [GET]
+Rendering twitter/index
+Completed in 27ms (View: 19, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 12:58:57) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser"}
+Rendering twitter/index
+Completed in 9375ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:03:00) [GET]
+Rendering twitter/index
+Completed in 33ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:03:03) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>""}
+Rendering twitter/index
+Completed in 11362ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:03:25) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 1201ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:03:46) [GET]
+Rendering twitter/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:03:48) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>""}
+Rendering twitter/index
+Completed in 16508ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:04:10) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 4533ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:04:39) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 10590ms (View: 20, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:05:26) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 2031ms (View: 17, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:05:39) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 7571ms (View: 18, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:06:33) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 2150ms (View: 24, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:07:50) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"maratz", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 7292ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:08:11) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"37signals", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 8565ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:08:55) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"37signals", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 1992ms (View: 37, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:12:29) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"37signals", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 16910ms (View: 23, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:13:54) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"37signals", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 2529ms (View: 18, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:15:15) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"37signals", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 2923ms (View: 47, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:16:27) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"37signals", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 22089ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:17:16) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"37signals", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 12881ms (View: 26, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:18:13) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"37signals", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 2456ms (View: 26, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:18:30) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"37signals", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 12405ms (View: 26, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:19:07) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"37signals", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 2537ms (View: 187, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:19:14) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 9552ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:32:28) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 3104ms (View: 26, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:32:42) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 2829ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:32:47) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 2902ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:33:07) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 7474ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:33:36) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 4950ms (View: 14, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:35:07) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 2115ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:37:27) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 12225ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:37:53) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 5285ms (View: 51, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:39:12) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 12740ms (View: 14, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:39:49) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 6967ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:40:08) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 6930ms (View: 33, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:40:42) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 13613ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:45:12) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 7334ms (View: 41, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:48:04) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+
+ActionView::TemplateError (wrong number of arguments (3 for 2)) on line #48 of app/views/twitter/index.html.erb:
+45: <% if @username2 && !@error2 -%>
+46: <div>
+47: <%= image_tag @follow_cost2.profile_image_url %> <%= @follow_cost2.username %>
+48: <p style="background-color: #eee">account created at: <%= @follow_cost2.twitter_created_at.to_time %>. It's was before <%= time_ago_in_words(@follow_cost2.twitter_created_at.to_time, false, :except => ["minutes", "hours"]) %></p>
+49: <p>milliscobles_all_time: <%= @follow_cost2.milliscobles_all_time %></p>
+50: <p style="background-color: #eee">average_tweets_per_day: <%= @follow_cost2.average_tweets_per_day %></p>
+51: <p>at_reply_index: <%= @follow_cost2.at_reply_index %></p>
+
+    app/views/twitter/index.html.erb:48:in `time_ago_in_words'
+    app/views/twitter/index.html.erb:48
+
+Rendered rescues/_trace (119.8ms)
+Rendered rescues/_request_and_response (19.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:48:17) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 2713ms (View: 35, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:49:15) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 3860ms (View: 201, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:49:56) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 7955ms (View: 40, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:50:30) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 4079ms (View: 36, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:52:02) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 2064ms (View: 174, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:53:32) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 1999ms (View: 38, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:54:59) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+
+ActionView::TemplateError (wrong number of arguments (1 for 0)) on line #20 of app/views/twitter/index.html.erb:
+17: <p>at_reply_index: <%= @follow_cost.at_reply_index.round(2) %></p>
+18: <p style="background-color: #eee">milliscobles_recently: <%= @follow_cost.milliscobles_recently.round(2) %></p>
+19: <p>golden_index: <%= @follow_cost.golden_index.round(2) %></p>
+20: <p style="background-color: #eee">statuses_count: <%= @follow_cost.statuses_count.round(2) %></p>
+21: <p>political_index: <%= @follow_cost.political_index.round(2) %></p>
+22: <p style="background-color: #eee">average_tweets_per_day_recently: <%= @follow_cost.average_tweets_per_day_recently.round(2) %></p>
+23: 
+
+    app/views/twitter/index.html.erb:20:in `round'
+    app/views/twitter/index.html.erb:20
+
+Rendered rescues/_trace (261.7ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:55:23) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+
+ActionView::TemplateError (wrong number of arguments (1 for 0)) on line #26 of app/views/twitter/index.html.erb:
+23: 
+24: <hr />
+25: 
+26: <p style="background-color: #eee">tomorrow_2w: <%= @tc.tomorrow_2w.round(2) %></p> 
+27: <p>followers_2w_ago: <%= @tc.followers_2w_ago.round(2) %></p>  
+28: <p style="background-color: #eee">followers_yesterday: <%= @tc.followers_yesterday.round(2) %></p>  
+29: <p>followers_current: <%= @tc.followers_current.round(2) %></p>  
+
+    app/views/twitter/index.html.erb:26:in `round'
+    app/views/twitter/index.html.erb:26
+
+Rendered rescues/_trace (95.3ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:55:36) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+
+ActionView::TemplateError (wrong number of arguments (1 for 0)) on line #27 of app/views/twitter/index.html.erb:
+24: <hr />
+25: 
+26: <p style="background-color: #eee">tomorrow_2w: <%= @tc.tomorrow_2w %></p> 
+27: <p>followers_2w_ago: <%= @tc.followers_2w_ago.round(2) %></p>  
+28: <p style="background-color: #eee">followers_yesterday: <%= @tc.followers_yesterday.round(2) %></p>  
+29: <p>followers_current: <%= @tc.followers_current.round(2) %></p>  
+30: <p style="background-color: #eee">friends_current: <%= @tc.friends_current.round(2) %></p>  
+
+    app/views/twitter/index.html.erb:27:in `round'
+    app/views/twitter/index.html.erb:27
+
+Rendered rescues/_trace (99.7ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:55:46) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+
+ActionView::TemplateError (wrong number of arguments (1 for 0)) on line #28 of app/views/twitter/index.html.erb:
+25: 
+26: <p style="background-color: #eee">tomorrow_2w: <%= @tc.tomorrow_2w %></p> 
+27: <p>followers_2w_ago: <%= @tc.followers_2w_ago %></p>  
+28: <p style="background-color: #eee">followers_yesterday: <%= @tc.followers_yesterday.round(2) %></p>  
+29: <p>followers_current: <%= @tc.followers_current.round(2) %></p>  
+30: <p style="background-color: #eee">friends_current: <%= @tc.friends_current.round(2) %></p>  
+31: <p>next_month: <%= @tc.next_month.round(2) %></p>  
+
+    app/views/twitter/index.html.erb:28:in `round'
+    app/views/twitter/index.html.erb:28
+
+Rendered rescues/_trace (254.3ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:56:58) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 1912ms (View: 32, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:57:47) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+
+ActionView::TemplateError (wrong number of arguments (1 for 0)) on line #54 of app/views/twitter/index.html.erb:
+51: <p>at_reply_index: <%= @follow_cost2.at_reply_index.round(2) %></p>
+52: <p style="background-color: #eee">milliscobles_recently: <%= @follow_cost2.milliscobles_recently.round(2) %></p>
+53: <p>golden_index: <%= @follow_cost2.golden_index.round(2) %></p>
+54: <p style="background-color: #eee">statuses_count: <%= @follow_cost2.statuses_count.round(2) %></p>
+55: <p>political_index: <%= @follow_cost2.political_index.round(2) %></p>
+56: <p style="background-color: #eee">average_tweets_per_day_recently: <%= @follow_cost2.average_tweets_per_day_recently.round(2) %></p>
+57: 
+
+    app/views/twitter/index.html.erb:54:in `round'
+    app/views/twitter/index.html.erb:54
+
+Rendered rescues/_trace (257.7ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-15 13:57:57) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"9zcG+kgH1oR+QU4IxzO2ffqJP4XJXPIwMEoI60P80II=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 4926ms (View: 34, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-20 17:40:53) [GET]
+Rendering twitter/index
+Completed in 64ms (View: 60, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-20 17:40:58) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"8hBpqb22ObZBmQHLvxtZm35Eg7UqRnf3Gmg4qSN+UlE=", "username"=>"sloser", "username2"=>""}
+Rendering twitter/index
+Completed in 1740ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 09:33:59) [GET]
+Rendering twitter/index
+Completed in 64ms (View: 60 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 09:34:04) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"emusoft", "username2"=>"sloser"}
+Rendering twitter/index
+Completed in 2103ms (View: 20 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 09:37:55) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"emusoft", "username2"=>"sloser"}
+Rendering twitter/index
+Completed in 1893ms (View: 29 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 09:40:15) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"emusoft", "username2"=>"sloser"}
+Rendering twitter/index
+Completed in 1870ms (View: 28 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 09:42:29) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"37signals", "username2"=>"sloser"}
+Rendering twitter/index
+Completed in 3496ms (View: 28 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 09:45:14) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"emusoft", "username2"=>"sloser"}
+Rendering twitter/index
+Completed in 1749ms (View: 16 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 09:48:36) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"emusoft", "username2"=>"sloser"}
+Rendering twitter/index
+Completed in 2029ms (View: 28 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 09:49:39) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"emusoft", "username2"=>"sloser"}
+Rendering twitter/index
+Completed in 3541ms (View: 17 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 09:51:42) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"emusoft", "username2"=>"sloser"}
+Rendering twitter/index
+Completed in 1879ms (View: 26 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 09:53:01) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"emusoft", "username2"=>"sloser"}
+Rendering twitter/index
+
+ActionView::TemplateError (undefined local variable or method `current' for #<ActionView::Base:0xb783d620>) on line #54 of app/views/twitter/index.html.erb:
+51: 
+52: <p>followers 2weeks ago: <%= @tc2.followers_2w_ago %></p>  
+53: <p style="background-color: #eee">followers yesterday: <%= @tc2.followers_yesterday %></p>  
+54: <p>followers current: <%= @tc2.followers current %></p>  
+55: <p style="background-color: #eee">friends_current: <%= @tc2.friends_current %></p>  
+56: <p style="background-color: #eee">growth since 2weeks: <%= @tc2.growth_since_2w %></p>   
+57: <p>started followers: <%= @tc2.started_followers %></p>  
+
+    app/views/twitter/index.html.erb:54
+
+Rendered rescues/_trace (85.6ms)
+Rendered rescues/_request_and_response (2.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 09:53:10) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"emusoft", "username2"=>"sloser"}
+Rendering twitter/index
+Completed in 1811ms (View: 26 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 09:54:48) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"emusoft", "username2"=>"sloser"}
+Rendering twitter/index
+Completed in 1924ms (View: 27 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 09:55:08) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"emusoft", "username2"=>"sloser"}
+Rendering twitter/index
+Completed in 1873ms (View: 28 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 09:55:22) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"emusoft", "username2"=>"sloser"}
+Rendering twitter/index
+Completed in 2333ms (View: 28 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 10:34:10) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"emusoft", "username2"=>"sloser"}
+Rendering twitter/index
+Completed in 1873ms (View: 30 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 10:34:18) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"emusoft", "username2"=>"sloser"}
+Rendering twitter/index
+Completed in 1872ms (View: 22 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 10:35:09) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"emusoft", "username2"=>"sloser"}
+Rendering twitter/index
+Completed in 1842ms (View: 32 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 10:35:12) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"emusoft", "username2"=>"sloser"}
+Rendering twitter/index
+Completed in 1860ms (View: 16 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 10:35:32) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"emusoft", "username2"=>"sloser"}
+Rendering twitter/index
+Completed in 1829ms (View: 33 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 10:35:37) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"emusoft", "username2"=>"sloser"}
+Rendering twitter/index
+Completed in 1842ms (View: 16 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 10:36:18) [GET]
+Rendering twitter/index
+Completed in 23ms (View: 19 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 10:36:25) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>""}
+Rendering twitter/index
+Completed in 1616ms (View: 14 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 10:36:51) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>""}
+Rendering twitter/index
+Completed in 1565ms (View: 23 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 10:37:03) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>""}
+Rendering twitter/index
+Completed in 1537ms (View: 24 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 10:37:19) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>""}
+Rendering twitter/index
+Completed in 1575ms (View: 24 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 10:37:41) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>""}
+Rendering twitter/index
+Completed in 1506ms (View: 27 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 10:38:04) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"27signals"}
+Rendering twitter/index
+Completed in 1750ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 10:38:10) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"37signals"}
+Rendering twitter/index
+Completed in 2365ms (View: 16 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 11:04:01) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"37signals"}
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 11:05:20) [GET]
+Rendering twitter/index
+Completed in 24ms (View: 20 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 11:05:24) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>""}
+Rendering twitter/index
+Completed in 1663ms (View: 16 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 11:06:09) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>""}
+Rendering twitter/index
+Completed in 1416ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 11:07:21) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"37signals"}
+Rendering twitter/index
+Completed in 2502ms (View: 16 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 11:08:13) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"37signals"}
+Rendering twitter/index
+Completed in 2413ms (View: 17 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 11:08:17) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"37signals"}
+Rendering twitter/index
+Completed in 2203ms (View: 17 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 11:08:22) [GET]
+Rendering twitter/index
+Completed in 7ms (View: 3 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 11:08:27) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 1919ms (View: 17 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 11:08:36) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 2366ms (View: 30 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 11:09:04) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 1861ms (View: 29 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 11:12:28) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 1792ms (View: 17 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 11:58:57) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 1902ms (View: 30 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:00:26) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering twitter/index
+Completed in 1945ms (View: 27 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:03:56) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 2162ms (View: 35 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:05:36) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 2345ms (View: 17 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:05:47) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 2009ms (View: 19 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:06:02) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1850ms (View: 18 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:06:33) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1891ms (View: 19 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:07:27) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1913ms (View: 17 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:07:33) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1873ms (View: 18 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:07:40) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1844ms (View: 105 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:07:49) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1805ms (View: 17 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:08:23) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1904ms (View: 28 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:08:35) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 2557ms (View: 21 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:09:22) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1798ms (View: 17 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:09:31) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1722ms (View: 18 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:09:38) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1968ms (View: 17 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:09:47) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1846ms (View: 18 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:09:57) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 2344ms (View: 17 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:10:11) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 2249ms (View: 18 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:10:27) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1951ms (View: 19 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:10:41) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 2346ms (View: 105 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:10:50) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1770ms (View: 18 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:11:22) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1928ms (View: 18 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:11:27) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1878ms (View: 17 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:11:48) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1964ms (View: 17 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:11:58) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 2163ms (View: 17 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:12:08) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 2105ms (View: 18 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:12:22) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 2029ms (View: 18 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:12:42) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1830ms (View: 17 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:12:53) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1897ms (View: 17 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:12:59) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1854ms (View: 18 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:13:12) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 2121ms (View: 19 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:14:00) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1833ms (View: 28 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:14:47) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1940ms (View: 27 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:14:56) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 20ms (View: 14 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:15:35) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 19ms (View: 15 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:16:28) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 18ms (View: 15 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:16:34) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 34ms (View: 27 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:16:48) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 11ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:16:52) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 17ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:17:04) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:17:24) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 16ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:17:30) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 37ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:17:33) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 9ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:17:35) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:17:38) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:17:44) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 12ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:17:49) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:17:57) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 15ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:18:12) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:18:28) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 11ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:18:59) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 26ms (View: 23 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:19:09) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 29ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:19:35) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:19:38) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 12ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:19:42) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:21:13) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 40ms (View: 36 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:26:43) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 19ms (View: 15 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:26:47) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 9ms (View: 5 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:27:14) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 22ms (View: 17 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:27:30) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 87ms (View: 60 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:27:52) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 5 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:28:57) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:28:59) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 9ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:29:11) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:29:28) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 20ms (View: 16 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:29:34) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 24ms (View: 20 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:29:54) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 5 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:32:19) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 9ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:32:43) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:32:47) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 12ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:33:18) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 15ms (View: 6 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:33:33) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:33:39) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 11ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:34:00) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 9ms (View: 5 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:34:06) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 15ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:34:18) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:34:28) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 11ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:34:50) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:34:57) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 17ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:35:12) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 16ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:35:18) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:35:26) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 16ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:35:37) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:35:53) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:36:06) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:36:19) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 9ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:38:06) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 11ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:38:39) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>""}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1422ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:38:46) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1830ms (View: 18 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:38:55) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1838ms (View: 18 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:39:00) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1893ms (View: 18 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:39:19) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1802ms (View: 17 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:39:24) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 9ms (View: 5 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:40:07) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 27ms (View: 23 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:40:29) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:40:37) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 107ms (View: 103 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:40:42) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:40:56) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 16ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:41:35) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 12ms (View: 8 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:41:49) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"emusoft", "username2"=>"sloser"}
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:42:45) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 31ms (View: 27 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:42:58) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"emusoft", "username2"=>"sloser"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1895ms (View: 115 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:43:11) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"", "username2"=>"sloser"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1440ms (View: 14 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:43:15) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"", "username2"=>""}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 604ms (View: 3 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:43:22) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"emusoft", "username2"=>"sloser"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1851ms (View: 18 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:43:28) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:43:44) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"enter twitter username", "username2"=>"sloser"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 2927ms (View: 13 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:43:54) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:43:55) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"enter twitter username", "username2"=>"enter twitter username"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 10ms (View: 3 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:44:01) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"enter twitter username", "username2"=>"enter twitter username"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 11ms (View: 5 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:44:16) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"enter twitter username", "username2"=>"enter twitter username"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 25ms (View: 3 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:44:25) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"enter twitter username", "username2"=>"enter twitter username"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 26ms (View: 21 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:44:27) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:44:34) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:44:38) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 10ms (View: 5 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:44:46) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 9ms (View: 5 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:45:07) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 16ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:45:20) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 20ms (View: 16 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:45:32) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 46ms (View: 25 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:45:45) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"sloser"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 2356ms (View: 18 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:46:01) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1887ms (View: 19 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:46:08) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoftt"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1603ms (View: 13 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:46:13) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloserr", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1250ms (View: 99 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:46:27) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1764ms (View: 18 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:47:22) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1878ms (View: 18 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:47:29) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1823ms (View: 19 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:47:44) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1855ms (View: 19 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:47:52) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1421ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:47:58) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1279ms (View: 3 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:48:02) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 24ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:48:10) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1293ms (View: 3 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:48:14) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:48:19) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"enter twitter username2"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 660ms (View: 3 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:48:25) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"37signals"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1289ms (View: 3 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:48:30) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:48:46) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"enter twitter username2"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 635ms (View: 3 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:48:50) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 25ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:50:22) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"enter twitter username2"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 651ms (View: 3 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:50:28) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 9ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:52:30) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 9ms (View: 5 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:52:33) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"enter twitter username2"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 664ms (View: 3 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:52:46) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:52:51) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"enter twitter username", "username2"=>"enter twitter username2"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 9ms (View: 3 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:52:56) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"enter twitter username", "username2"=>"enter twitter username2"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 14ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:56:11) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"enter twitter username", "username2"=>"enter twitter username2"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 11ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:56:16) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"sloser"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1339ms (View: 3 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 12:56:28) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 18ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 13:09:23) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"enter twitter username2"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1218ms (View: 13 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 13:09:29) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1727ms (View: 18 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 13:09:40) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1835ms (View: 18 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 13:09:50) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 2003ms (View: 18 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 13:09:58) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 13:56:45) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 36ms (View: 32 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 13:56:55) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 19ms (View: 15 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 13:58:36) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 19ms (View: 15 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 13:58:45) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"enter twitter username"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1229ms (View: 13 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 13:59:36) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 31ms (View: 27 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 13:59:44) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"enter twitter username"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1251ms (View: 13 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 13:59:53) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1791ms (View: 18 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 14:00:01) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 68ms (View: 23 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 14:00:58) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 44ms (View: 40 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 14:01:12) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"enter twitter username"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 9901ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 14:01:28) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"ukCWhuY7yq+C1KNw4cVUepu792i21TwhsaGKkpV9TYg=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1860ms (View: 17 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 14:01:36) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 14:01:48) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 14:01:58) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 23ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 18:41:18) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 87ms (View: 83 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 18:41:33) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"1M54snA85C3LYspQbKBEMOy8bECaUuC9V+o17VeMOTY=", "username"=>"sloser", "username2"=>"enter twitter username"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1355ms (View: 22 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 18:41:47) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"1M54snA85C3LYspQbKBEMOy8bECaUuC9V+o17VeMOTY=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1962ms (View: 18 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 18:42:05) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 18:42:09) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"1M54snA85C3LYspQbKBEMOy8bECaUuC9V+o17VeMOTY=", "username"=>"enter twitter username", "username2"=>"enter twitter username"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 3 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 18:42:16) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"1M54snA85C3LYspQbKBEMOy8bECaUuC9V+o17VeMOTY=", "username"=>"enter twitter username", "username2"=>"sloser"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1248ms (View: 13 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 18:42:23) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"1M54snA85C3LYspQbKBEMOy8bECaUuC9V+o17VeMOTY=", "username"=>"sloser", "username2"=>"sloser"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 2719ms (View: 21 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-08-21 18:42:32) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 8ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-11-05 18:03:54) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 79ms (View: 74 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-11-05 18:04:00) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"/UJhmuTfDMj6EgmP4/6ph7qaZrjvK05FUNCERHwRYzw=", "username"=>"emusoft", "username2"=>"enter twitter username"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 924ms (View: 3 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-11-05 18:04:05) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"/UJhmuTfDMj6EgmP4/6ph7qaZrjvK05FUNCERHwRYzw=", "username"=>"emusoft", "username2"=>"sloser"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1460ms (View: 3 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-11-05 18:04:11) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"/UJhmuTfDMj6EgmP4/6ph7qaZrjvK05FUNCERHwRYzw=", "username"=>"emusoft", "username2"=>"sloser"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1515ms (View: 3 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2009-11-05 18:04:18) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"/UJhmuTfDMj6EgmP4/6ph7qaZrjvK05FUNCERHwRYzw=", "username"=>"emusoft", "username2"=>"sloser"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1770ms (View: 3 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2010-12-10 12:09:04) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 124ms (View: 121 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2010-12-10 12:09:16) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"VFfCqJPD0cdc+fLU+q4lRt/JuANR371x3Mwb8SEo5oQ=", "username"=>"sloser", "username2"=>"enter twitter username"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 4984ms (View: 14 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2010-12-10 12:09:49) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"VFfCqJPD0cdc+fLU+q4lRt/JuANR371x3Mwb8SEo5oQ=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 6211ms (View: 24 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2010-12-10 12:11:50) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"VFfCqJPD0cdc+fLU+q4lRt/JuANR371x3Mwb8SEo5oQ=", "username"=>"sloser", "username2"=>"emusoft"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 2615ms (View: 34 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2010-12-10 12:13:56) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 57ms (View: 46 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2010-12-10 12:14:03) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 18ms (View: 15 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2010-12-10 12:14:07) [GET]
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 15ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing TwitterController#index (for 127.0.0.1 at 2010-12-10 12:14:25) [POST]
+  Parameters: {"commit"=>"send", "authenticity_token"=>"VFfCqJPD0cdc+fLU+q4lRt/JuANR371x3Mwb8SEo5oQ=", "username"=>"sloser", "username2"=>"enter twitter username"}
+Rendering template within layouts/application
+Rendering twitter/index
+Completed in 1873ms (View: 20 | 200 OK [http://localhost/]

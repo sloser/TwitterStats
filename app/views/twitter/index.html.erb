@@ -1,0 +1,56 @@
+<h1>TwitterStats</h1>
+<h3>Look stats for your twitter account, or <a id="trigger" href="#">compare it</a> with some other account.</h3>
+
+<% form_tag '' do -%>	
+	<input type="text" name="username" value="<%= @username ? @username : 'enter twitter username' %>" onfocus="if (this.value == 'enter twitter username') this.value = '';" onblur="if (this.value == '') this.value = 'enter twitter username';" />
+	<input <%= 'id="hidden"' unless @username2 %> type="text" name="username2" value="<%= @username2 ? @username2 : 'enter twitter username' %>" onfocus="if (this.value == 'enter twitter username') this.value = '';" onblur="if (this.value == '') this.value = 'enter twitter username';" />
+	<%= submit_tag 'send', :class => 'submit' %>
+	
+<% end -%>
+
+<% if @username && !@error -%>
+<div class="left">
+<%= image_tag @follow_cost.profile_image_url %> <%= @follow_cost.username %>
+<p>account created at: <%= @follow_cost.twitter_created_at.to_date %>. It's was before <%= distance_of_time_in_words(Time.now, @follow_cost.twitter_created_at.to_time, false, :except => ["minutes", "hours"]) %></p>
+<p>average tweets per day: <%= @follow_cost.average_tweets_per_day.round(2) %></p>
+<p>average tweets per day recently: <%= @follow_cost.average_tweets_per_day_recently.round(2) %></p>
+<p>total tweets: <%= @follow_cost.statuses_count %></p>
+<p>at reply index: <%= @follow_cost.at_reply_index.round(2) %>% of recent tweets are @replies</p>
+<p>golden index: <%= @follow_cost.golden_index.round(2) %>% of recent tweets are 140 characters long</p>
+<p>political index: <%= @follow_cost.political_index.round(2) %></p>
+<!--p>followers 2 weeks ago: <%= @tc.followers_2w_ago %></p-->  
+<p>followers yesterday: <%= @tc.followers_yesterday %></p>  
+<p>followers current: <%= @tc.followers_current %></p>  
+<p>friends current: <%= @tc.friends_current %></p>  
+<!--p>growth since 2weeks: <%= @tc.growth_since_2w %></p-->   
+<p>started followers: <%= @tc.started_followers %></p>  
+<p>rank: <%= @tc.rank %></p>  
+<p>follow days: <%= @tc.follow_days %></p>  
+<p>average growth: <%= @tc.average_growth %></p>  
+<!--p>average growth last 2 weeks: <%= @tc.average_growth_2w %></p--> 
+</div>
+<% end -%>
+
+<% if @username2 && !@error2 -%>
+<div class="right">
+<%= image_tag @follow_cost2.profile_image_url %> <%= @follow_cost2.username %>
+<p>account created at: <%= @follow_cost2.twitter_created_at.to_date %>. It's was before <%= distance_of_time_in_words(Time.now, @follow_cost2.twitter_created_at.to_time, false, :except => ["minutes", "hours"]) %></p>
+<p>average tweets per day: <%= @follow_cost2.average_tweets_per_day.round(2) %></p>
+<p>average tweets per day recently: <%= @follow_cost2.average_tweets_per_day_recently.round(2) %></p>
+<p>total tweets: <%= @follow_cost2.statuses_count %></p>
+<p>at reply index: <%= @follow_cost2.at_reply_index.round(2) %>% of recent tweets are @replies</p>
+<p>golden index: <%= @follow_cost2.golden_index.round(2) %>% of recent tweets are 140 characters long</p>
+<p>political index: <%= @follow_cost2.political_index.round(2) %></p>
+<!--p>followers 2 weeks ago: <%= @tc2.followers_2w_ago %></p-->  
+<p>followers yesterday: <%= @tc2.followers_yesterday %></p>  
+<p>followers current: <%= @tc2.followers_current %></p>  
+<p>friends current: <%= @tc2.friends_current %></p>  
+<!--p>growth since 2weeks: <%= @tc2.growth_since_2w %></p-->   
+<p>started followers: <%= @tc2.started_followers %></p>  
+<p>rank: <%= @tc2.rank %></p>  
+<p>follow days: <%= @tc2.follow_days %></p>  
+<p>average growth: <%= @tc2.average_growth %></p>  
+<!--p>average growth last 2 weeks: <%= @tc2.average_growth_2w %></p--> 
+ 
+</div>
+<% end -%>
